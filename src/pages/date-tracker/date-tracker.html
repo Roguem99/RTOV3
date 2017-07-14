@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Date Picker</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="release-content" padding>
+  <div class="trackingRelease">
+    <h3>Start tracking your releases!</h3>
+            <img class="release-image" src="assets/images/CODWW2.jpg">
+      <span class="fixedImage" id='formElement'>
+            {{myTitle}}
+            {{myDate}}
+          </span>
+
+
+          
+        <ion-card>
+          <ion-item>
+            <ion-input placeholder="Release Title" type="text" 
+              [(ngModel)]="myTitle">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-datetime placeholder="Release Date" displayFormat="MM/DD/YYYY" 
+              min="2017" max="2030" pickerFormat="MM DD YYYY" 
+              [(ngModel)]="myDate"></ion-datetime>
+          </ion-item>
+        </ion-card>
+  </div>
+</ion-content>
+
