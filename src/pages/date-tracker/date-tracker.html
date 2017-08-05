@@ -15,6 +15,7 @@
             {{myTitle}}
             {{myDate}}
           </span>
+          <span>current Date: {{currentDate}}</span>
 
 
           
@@ -27,7 +28,7 @@
           <ion-item>
             <ion-datetime placeholder="Release Date" displayFormat="MM/DD/YYYY" 
               min="2017" max="2030" pickerFormat="MM DD YYYY" 
-              [(ngModel)]="myDate"></ion-datetime>
+              [(ngModel)]="myDate" (change)="calculateTimeLeft($event)"></ion-datetime>
           </ion-item>
         </ion-card>
   </div>

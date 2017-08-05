@@ -16,16 +16,14 @@ export class DateTrackerPage {
 //ISO 8601 Datetime Format: YYYY-MM-DDTHH:mmZ
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-      // // let date = this.myDate;
-      // let date = this.myDate;
-      // // let date = new Date("November 4, 2017 00:00:01");
-      // let currentDate = new Date();
       
-      // let resultDate = Math.floor((date - this.currentDate) / (1000*60*60*24));
-      
-      // function calcualteTimeLeft(resultDate: number){
-      //   return resultDate;
-      // }
+      function calculateTimeLeft(selectedDate){
+        let date = selectedDate;
+        let currentDate = new Date();
+        console.log('selected Date ====>', selectedDate)
+        
+        return Math.floor((date - this.currentDate) / (1000*60*60*24));
+      }
 
 
 
