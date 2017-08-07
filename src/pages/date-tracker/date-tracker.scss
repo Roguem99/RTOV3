@@ -9,6 +9,42 @@ page-date-tracker {
             margin-left: 0;
         }
 
+        // .release-time{
+        //     position:absolute;
+        //     top:30%;
+        //     left:40%;
+        // }
+
+        .timer-button {
+            font-size: 5rem !important;
+            height: 1em !important;
+        }
+        
+        .no-bottom-border.item .item-inner {
+            border-bottom: none !important;
+        }
+
+        #releaseTime{
+            position:absolute;
+            top:20%;
+            // left:20%;
+            text-align: center;
+            margin:0;
+            top:50%;
+            left:50%;
+            margin-right:-50%;
+            transform: translate(-50%, -50%);
+
+            font-size: 220%;
+            color: black;
+            text-shadow:
+            -0.5px -0.5px 0 white,  
+                0.5px -0.5px 0 white,
+                -0.5px 0.5px 0 white,
+                0.5px 0.5px 0 white;
+
+        }
+
         #formElement
         {
             position:absolute;

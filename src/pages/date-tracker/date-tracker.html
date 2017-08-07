@@ -10,15 +10,16 @@
 <ion-content class="release-content" padding>
   <div class="trackingRelease">
     <h3>Start tracking your releases!</h3>
-            <img class="release-image" src="assets/images/CODWW2.jpg">
+      <img class="release-image" src="assets/images/CODWW2.jpg">
       <span class="fixedImage" id='formElement'>
             {{myTitle}}
             {{myDate}}
           </span>
-          <span>current Date: {{currentDate}}</span>
 
+      <span class="release-time" id='releaseTime'>
+        <p >==> {{resultDate}}</p> 
+      </span>  
 
-          
         <ion-card>
           <ion-item>
             <ion-input placeholder="Release Title" type="text" 
@@ -27,8 +28,8 @@
           </ion-item>
           <ion-item>
             <ion-datetime placeholder="Release Date" displayFormat="MM/DD/YYYY" 
-              min="2017" max="2030" pickerFormat="MM DD YYYY" 
-              [(ngModel)]="myDate" (change)="calculateTimeLeft($event)"></ion-datetime>
+              max="2030" min={{currentDate}} pickerFormat="MM DD YYYY" 
+              [(ngModel)]="myDate" (ionChange)="calculateTimeLeft($event)"></ion-datetime>
           </ion-item>
         </ion-card>
   </div>
