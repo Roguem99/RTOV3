@@ -1,5 +1,8 @@
 {
   "name": "RTrackerTestV3",
   "app_id": "850c9b02",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
